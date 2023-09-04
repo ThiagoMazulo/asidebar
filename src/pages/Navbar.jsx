@@ -38,9 +38,9 @@ const Navbar = (props) => {
     <nav className="navbar">
       {itens.map((item, index) => (
         <div
-          className={`aside-components ${
-            props.isOpen ? "aside-components:hover" : "aside2-componentes:hover"
-          }`}
+          className={
+            props.isOpen ? "aside-components" : "aside-close"
+          }
           key={index}
         >
           <Link to={item.to}>
